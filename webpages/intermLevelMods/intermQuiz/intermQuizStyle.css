@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+   }
+   
+   body{
+       background-image: url("../../universalBg.png");
+       background-position: center;
+       background-size: cover;
+       height: 100vh;
+       font-family: sans-serif;
+       overflow-x: hidden;
+   }
+   
+   .wrapper{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100vw;
+       height: 100vh;
+   }
+   
+   .quiz{
+       display: grid;
+       grid-template-rows: 20px auto;
+       width: 600px;
+       height: 500px;
+       border-radius: 50px;
+   }
+   
+   .quiz_body{
+       padding: 20px 30px;
+       background-color: burlywood;
+       border-radius: 10%;
+   }
+   
+   .option_group{
+       list-style-type: none;
+       margin: 30px 0;
+   }
+   
+   .option{
+       display: block;
+       width: 300px;
+       background-color: #fff;
+       margin-bottom: 20px;
+       padding: 15px 20px;
+       border-radius: 50px;
+       border: 2px solid transparent;
+       transition: 0.4s all;
+       font-weight: bold;
+   }
+   
+   .option:hover{
+       cursor: pointer;
+       border: 2px solid #341f97;
+       color: #341f97;
+   }
+   
+   .option.active{
+       background-color: #d47720;
+       color: #fff;
+   }
+   
+   .eval {
+       padding: 10px 10px;
+       text-align: center;
+       margin-top: 2%;
+       color: white;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   #evalCorrect {
+       display: none;
+       background-color: green;
+   }
+   #evalWrong {
+       display: none;
+       background-color: red;
+   }
+   
+   .btn-next{
+       border: none;
+       padding: 15px 35px;
+       background-color: #faac03;
+       color: #fff;
+       border-radius: 50px;
+       transition: 0.4s all;
+   }
+   
+   .btn-next:hover{
+       cursor: pointer;
+       background-color: #341f97;
+       color: #fff;
+   }
+   
+   
+   .username, .userpoints{
+       color: #fff;
+       text-align: center;
+       margin-top: 20px;
+   }
+   .userpoints {
+       font-size: 30px;
+   }
+   
+   .awardCont{
+       height: 500px;
+       width: 500px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       background-color: rgba(233, 164, 16, 0.534);
+       border-radius: 10%;
+   }
+   #TitleSign {
+    width: 250px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    float:right;
+    position: -webkit-sticky; 
+    position: absolute;
+    top: 0; 
+    transform: translate(-0%,-35%);
+    z-index: 5;
+}
+   #awardBody {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   #star-icon {
+       width: 200px;
+       height: 200px;
+   }
+   @media only screen and (max-width: 600px) { 
+   
+       .quiz{
+           display: grid;
+           grid-template-rows: 20px auto;
+           width: 600px;
+           height: 500px;
+           border-radius: 50px;
+       }
+   
+   }
