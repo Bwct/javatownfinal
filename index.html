@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginStyle.css">
+    <script type="text/javascript" src="loginScript.js"></script>
+    <title>JavaTown</title>
+</head>
+<body>
+
+
+  
+    <div class="titleCont">
+      <h1 class="titles" id="loginTitle">Login</h1>
+      <h1 class="titles" id="regTitle">Register</h1>
+    </div>
+
+
+    <div class="yellow">
+      <form id="loginForm">
+        <label class="label" for="Username">Username</label>
+        <input class="fieldEl" type="text" id="usernameLogin" name="Email" placeholder="javalearner28">
+
+        <label for="Password">Password</label>
+        <input class="fieldEl" type="password" id="passwordLogin" name="Password" placeholder="shh!"></input>
+
+
+          <input class="fieldEl" type="submit" value="Login" id="logButton">
+      </form>
+
+    </div>
+
+    <div class="yellow" id="regYellow">
+
+      <form id="registerForm">
+
+        <label  for="Username">Username</label>
+        <input class="fieldEl" id="ignInput" type="text" name="Username" placeholder="javalearner28">
+        <span class="errorText" id="ignError"></span>
+        <br>
+
+        <label  for="Email">Email</label>
+        <input class="fieldEl" type="email" id="EmailInput" name="Email" placeholder="handsomeme382@gmail.com">
+        <span class="errorText" id="emailError"></span>
+        <br>
+
+        <label for="Password">Password</label>
+        <input class="fieldEl" type="password" id="PasswordInput" name="Password" placeholder="shh!"></input>
+        <span class="errorText" id="passwordError"></span>
+        <br>
+
+       <input class="fieldEl" type="submit" value="Register" id="regButton">
+
+      </form>
+     
+    </div>
+    <p id="policyText">By creating an account you agree to our <a href="privacyPolicy.html">Terms & Privacy</a>.</p>
+
+
+    <script src="webpages/quizPages/quizScripts/shopScript.js"></script>
+    <script src="webpages/quizPages/quizScripts/userinfo.js"></script>
+</body>
+</html>

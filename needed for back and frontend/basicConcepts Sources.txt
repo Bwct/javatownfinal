@@ -1,0 +1,59 @@
+What is Java? | IBM. (2023). Ibm.com. https://www.ibm.com/topics/java
+
+https://www.softwaretestinghelp.com/java-basics-and-core-java-concepts/#Java_Syntax
+
+https://www.javatpoint.com/primitive-vs-non-primitive-data-structure#:~:text=Primitive%20data%20structure%20is%20a%20kind%20of%20data%20structure%20that,are%20integer%2C%20character%2C%20float.
+
+
+
+ARRAYS LOOPS
+https://www.simplilearn.com/tutorials/java-tutorial/for-loop-in-java#:~:text=Loops%20in%20Java%20is%20a,condition%20evaluates%20to%20be%20true.
+
+CLASS
+https://www.javatpoint.com/object-and-class-in-java#:~:text=What%20is%20a%20class%20in,It%20is%20a%20logical%20entity.
+
+DATA MEMBERS
+https://www.cs.nmsu.edu/~rth/cs/cs177/map/datamem.html#:~:text=A%20data%20member%20may%20be,of%20the%20class%20function%20members.
+
+
+ACCESS MODIFIER
+https://www.javatpoint.com/access-modifiers
+
+
+OOP CONCEPTS
+https://stackify.com/oops-concepts-in-java/
+
+
+
+
+
+
+ADVANCED
+
+inheritance polymorphism
+https://www.scaler.com/topics/dynamic-binding-in-java/
+
+static binding
+https://www.tutorialspoint.com/static-vs-dynamic-binding-in-java#:~:text=In%20Java%20static%20binding%20refers,class%20to%20which%20object%20belongs.
+
+inheritance types
+https://www.upgrad.com/blog/types-of-inheritance-in-java/
+
+
+function overloading
+
+https://www.mygreatlearning.com/blog/method-overloading-in-java/#:~:text=do%20Method%20Overloading%3F-,What%20is%20Method%20overloading%20in%20Java%3F,and%20their%20parameters%20are%20different.%E2%80%9D
+
+interfaces
+https://www.simplilearn.com/tutorials/java-tutorial/java-interface#:~:text=and%20project%20performance.-,What%20is%20Interface%20in%20Java%3F,in%20Java%20to%20achieve%20abstraction.
+
+abstract
+https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html#:~:text=An%20abstract%20class%20is%20a,but%20they%20can%20be%20subclassed.&text=When%20an%20abstract%20class%20is,methods%20in%20its%20parent%20class.
+
+
+exception handling
+
+https://www.javatpoint.com/exception-handling-in-java
+
+types of checked exception
+https://stackify.com/types-of-exceptions-java/
