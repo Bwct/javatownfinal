@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="homeImg/favicon32.png"/>
+    <link rel="stylesheet" href="shopStyle.css">
+    <title>JavaTown</title>
+</head>
+<body>
+  
+  <picture>
+
+   <a href="index.html"><img src="homeImg/TitleSign.png" id="TitleSign"></a> 
+</picture>
+
+<div class="starCurrency">
+  <h3 id="starTitle">Stars:</h3>
+  <svg width="100" height="100" >
+    <g>
+    <polygon points="50,5 63,30 90,35 70,55 75,80 50,70 25,80 30,55 10,35 37,30" style="fill: gold; stroke: black; stroke-width: 2px;">
+    </polygon>
+   
+    <text id="starPoints" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="black" font-size="18" font-family="Verdana">100</text>
+  </g>
+  </svg>
+</div>
+  <div id="tindahan" class="shop" >
+    <div class="flex-container"> 
+
+        <div class="square"  data-item="1" data-price="70" onclick="buyItem(this)">
+            <div class="detailCont">
+              <h1 class="details">Fence</h1>
+              <p class="price">Price = 70 stars</p>
+              <p class="price">(Click to buy)</p>
+            </div>
+               <img class="shopIcon" id="fence" src="quizPages/quizScripts/shopImg/fence.png">
+          
+        </div>
+
+        <div class="square" data-item="2" data-price="70" onclick="buyItem(this)">
+          <div class="detailCont" >
+            <h1 class="details">Fisherman</h1>
+            <p class="price">Price = 70 stars</p>
+            <p class="price">(Click to buy)</p>
+          </div>
+          <img class="shopIcon" id="building2" src="quizPages/quizScripts/shopImg/fisherman.png">
+        </div>
+        <div class="square" data-item="3" data-price="100" onclick="buyItem(this)">
+          <div class="detailCont">
+            <h1 class="details">Tree</h1>
+            <p class="price">Price = 100 stars</p>
+            <p class="price">(Click to buy)</p>
+          </div>
+          <img class="shopIcon"src="quizPages/quizScripts/shopImg/tree.png" alt="not supported" id="tree" >
+        </div>
+
+        <div class="square" data-item="4" data-price="100" onclick="buyItem(this)"> 
+          <div class="detailCont" >
+            <h1 class="details">Bush</h1>
+            <p class="price">Price = 100 stars</p>
+            <p class="price">(Click to buy)</p>
+          </div>
+          <img class="shopIcon" src="quizPages/quizScripts/shopImg/bush.png" alt="not supported" id="bush">
+      </div>
+    </div>
+    <div class="flex-container">
+        <div class="square" data-item="5" data-price="100" onclick="buyItem(this)">
+          <div class="detailCont" >
+            <h1 class="details">Rocks</h1>
+            <p class="price">Price = 100 stars</p>
+            <p class="price">(Click to buy)</p>
+          </div>
+          <img class="shopIcon" src="quizPages/quizScripts/shopImg/stone.png" alt="not supported" id="stone">
+        </div>
+        <div class="square" data-item="6" data-price="300" onclick="buyItem(this)">
+
+          <div class="detailCont" >
+            <h1 class="details">Lake</h1>
+            <p class="price">Price = 300 stars</p>
+            <p class="price">(Click to buy)</p>
+          </div>
+
+          <img src="quizPages/quizScripts/shopImg/lake.png" alt="not supported" class="shopIcon" id="lake">
+
+        </div>
+        <div class="square">
+          <div class="detailCont" >
+            <h1 class="details">Tree 2</h1>
+            <p class="price">Price = 300 stars</p>
+            <p class="price">(Click to buy)</p>
+          </div>
+
+          <img src="quizPages/quizScripts/shopImg/tree2.png" alt="not supported" class="shopIcon" id="lake">
+        </div>
+        <div class="square">
+          <div class="detailCont" >
+            <h1 class="details">Tree 2</h1>
+            <p class="price">Price = 300 stars</p>
+            <p class="price">(Click to buy)</p>
+          </div>
+
+          <img src="quizPages/quizScripts/shopImg/berries.png" alt="not supported" class="shopIcon" id="lake">
+        </div>
+    </div>
+
+  </div>
+  <script src="quizPages/quizScripts/shopScript.js"></script>
+  <script src="quizPages/quizScripts/userinfo.js"></script>
+  </body>
+</html>

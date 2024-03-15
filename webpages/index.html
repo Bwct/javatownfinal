@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<source lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="homeImg/favicon16.png"/>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <title>JavaTown</title>
+
+
+</head>
+<body onclick="triviaShow()" onload="tree(), bush(), stone(), lake()">
+
+    <div class="designCont" >
+        <img src="quizPages/quizScripts/shopImg/tree.png" alt="not supported"  id="tree" class="designImages hidden">
+        <img src="quizPages/quizScripts/shopImg/bush.png" alt="not supported" id="bush" class="designImages hidden">
+        <img src="quizPages/quizScripts/shopImg/stone.png" alt="not supported" id="stone" class="designImages hidden">
+        <img src="quizPages/quizScripts/shopImg/lake.png" alt="not supported" id="lake" class="designImages hidden">
+        <img src="quizPages/quizScripts/shopImg/fisherman.png" alt="not supported" id="fisherman" class="designImages">
+        <img src="quizPages/quizScripts/shopImg/berries.png" alt="not supported" id="berries" class="designImages">
+    </div>
+    
+
+    <svg id="sunSvg" width="300" height="300" >
+        
+        <circle id="sunBtn" cx="100" cy="100" r="80" fill="yellow"/>
+        <text id="welcomeTitle" x="55%" y="45%" dominant-baseline="middle" text-anchor="middle" fill="black">Welcome!</text>
+        <text id="nameDisplay" x="55%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="black" ></text>
+        <text id="hoverTitle" x="55%" y="75%" dominant-baseline="middle" text-anchor="middle" fill="black">(click to logout)</text>
+      </svg>
+    <picture>
+
+        <img src="homeImg/TitleSign.png" id="TitleSign" >
+    </picture>
+
+
+
+<div id="header">
+    <img class="clouds" src="homeImg/Cloud.png" id="Cloud">
+    <img class="clouds" src="homeImg/Cloud.png" id="Cloud2">
+    <img class="clouds" src="homeImg/Cloud.png" id="Cloud3">
+</div>
+
+    <div id="signCont">
+        
+
+
+        <a class="links" href="modules.html" onmouseenter="playHoverSound()"><img class="signages" src="homeImg/homeSign.png" id="homeSign" alt="Home"></a>
+
+        <a class="links" href="shop.html" onmouseenter="playHoverSound()"><img class="signages" src="homeImg/shopSign.png" id="shopSign" alt="Shop" ></a>
+        
+        <a class="links" href="settings.html" onmouseenter="playHoverSound()"><img class="signages" src="homeImg/settingSign.png" id="settingSign" alt="Settings" ></a>
+
+
+    </div>
+   
+ 
+            <div id="bubble-wrapper" onmousemove="animateBubble()">
+
+            </div>
+
+
+    <div id="triviaCont">
+        <h3 id="triviaTitle">Trivias</h3>
+        <p id="triviaText"></p> 
+    </div>
+    <script type="text/javascript" src="scripts/script.js"></script>
+
+    <script type="text/javascript" src="quizPages/quizScripts/shopScript.js"></script>
+
+    <script src="../loginScript.js"></script>
+
+    <script>
+    
+
+        const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+        // Check if the user is logged in
+        if (!loggedInUser) {
+            window.location.href = "../loginPage.html";
+        } else {
+            // Display the username in the text element
+            const nameDisplay = document.getElementById("nameDisplay");
+            nameDisplay.textContent = `${loggedInUser.username}`;
+        }
+        //Logout function
+        function logout() {
+        localStorage.removeItem("loggedInUser");
+        alert("Logout Successful");
+        window.location.href = "../loginPage.html";
+      }
+
+      var logoutButton = document.getElementById("sunBtn");
+      logoutButton.addEventListener("click", logout);
+
+      
+
+
+    </script>
+
+
+</body>
+</html> 
